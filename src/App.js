@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import {Provider} from 'react-redux'
+import { Route } from 'react-router-dom';
+import store from './store'
+import AdvertsListContainer from './components/AdvertsListContainer'
+import AdvertDetailsContainer from './components/AdvertDetailsContainer'
+import CreateAdvertFormContainer from './components/CreateAdvertFormContainer'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Provider store={store}>
+        <div>
+          <Route path="/" exact component={AdvertsListContainer} />
+          <Route path="/adverts/:id" component={AdvertDetailsContainer} />
+          <Route path="/" exact component={CreateAdvertFormContainer } />
+        </div>
+      </Provider>
     </div>
   );
 }
-
 export default App;
