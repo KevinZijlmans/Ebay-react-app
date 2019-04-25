@@ -19,7 +19,6 @@ export default class AdvertsList extends Component {
                         <h1>Welcome to eKAy!</h1>
                         <ul>
                             {adverts && adverts.map(advert => {
-                                console.log('advert test:', advert)
                                 return <li key={advert.id}>
                                     <Link to={`/adverts/${advert.id}`}>{advert.title}</Link>
                                 </li>

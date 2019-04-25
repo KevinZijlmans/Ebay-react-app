@@ -28,7 +28,6 @@ const advertFetched = advert => ({
   export const loadAdvert = id => (dispatch) => {
     request(`${baseUrl}/adverts/${id}`)
       .then(response => {
-        console.log(response)
         dispatch(advertFetched(response.body))
       })
       .catch(console.error)
@@ -43,7 +42,6 @@ const advertFetched = advert => ({
       .post(`${baseUrl}/adverts`)
       .send(data)
       .then(response => {
-        console.log('createAdvert response test:', response)
         dispatch(advertCreateSuccess(response.body))
       })
       .catch(console.error)
