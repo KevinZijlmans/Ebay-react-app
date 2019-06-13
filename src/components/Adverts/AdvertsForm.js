@@ -3,7 +3,8 @@ import React from 'react'
 export default function Advertform(props) {
     return (
         <div className="Advert-form">
-        Make an Advertisement!
+        <p>Make an Advertisement!</p>
+        Fill in the form and click Create to make an advert.
             <form onSubmit={props.onSubmit}>
                 <label>
                 <input type="text" name="title" onChange={props.onChange} placeholder='Title' />
@@ -29,7 +30,7 @@ export default function Advertform(props) {
                 <input type="text" name="picture" onChange={props.onChange} placeholder='Picture-url'/>
                 </label>
                 <br/>
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Create" />
             </form>
         </div>
     )}
