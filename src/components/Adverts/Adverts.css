@@ -13,7 +13,13 @@ h1 {
 	margin-bottom: 0; 
     color: black;
     font-size: 2cm
-	}
+}
+p { 
+    font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+    color: black;
+}
 body {
     background-color: antiquewhite;
     margin-left: 25%;

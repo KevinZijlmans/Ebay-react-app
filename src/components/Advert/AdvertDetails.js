@@ -10,8 +10,8 @@ export default function AdvertDetails(props) {
             <p>{props.advert.description}</p>
             <p>{props.advert.email}</p>
             <p>{props.advert.phoneNumber}</p>
-            <img src={props.advert.picture} alt="Productpics" height="42" width="42"/>
-            <p>{props.advert.price}</p>
+            <img src={props.advert.picture} alt="Productpics"/>
+            <p>Price: {props.advert.price}</p>
         </div>
         <div>
             <Button variant="contained" color="primary">
