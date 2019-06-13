@@ -6,4 +6,17 @@ li {
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
+    text-decoration: none;
+    
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+}
+
+body {
+    background-color: antiquewhite;
+    margin-left: 25%;
+    margin-right: 25%;
 }
