@@ -21,6 +21,7 @@ export default class AdvertsList extends Component {
                             {adverts && adverts.map(advert => {
                                 return <li key={advert.id}>
                                     <Link to={`/adverts/${advert.id}`}>{advert.title}</Link>
+                                    <br/>
                                     <img src={advert.picture} alt='product'/>
 
                                 </li>
