@@ -20,6 +20,8 @@ export default class AdvertsList extends Component {
                         <ul>
                             {adverts && adverts.map(advert => {
                                 return <li key={advert.id}>
+                                    <img src={advert.picture} alt='product'/>
+                                    <p></p>
                                     <Link to={`/adverts/${advert.id}`}>{advert.title}</Link>
                                 </li>
                             })}

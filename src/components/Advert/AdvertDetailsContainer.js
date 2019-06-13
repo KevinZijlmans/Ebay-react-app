@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import AdvertDetails from './AdvertDetails'
-import {loadAdvert} from '../actions/adverts'
+import {loadAdvert} from '../../actions/adverts'
 
 class AdvertDetailsContainer extends React.Component {
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {createAdvert} from '../actions/adverts'
+import {createAdvert} from '../../actions/adverts'
 import AdvertsForm from './AdvertsForm'
 
 class CreateAdvertFormContainer extends React.Component {

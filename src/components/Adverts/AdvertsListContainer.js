@@ -1,7 +1,8 @@
 import React from 'react'
-import {loadAdverts} from '../actions/adverts'
+import {loadAdverts} from '../../actions/adverts'
 import {connect} from 'react-redux'
 import AdvertsList from './AdvertsList'
+import './Adverts.css'
 
 class AdvertsListContainer extends React.Component {
   componentDidMount() {
