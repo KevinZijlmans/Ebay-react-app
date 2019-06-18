@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '@material-ui/core/Button'
 
 export default function Advertform(props) {
     return (
@@ -30,7 +31,9 @@ export default function Advertform(props) {
                 <input type="text" name="picture" onChange={props.onChange} placeholder='Picture-url'/>
                 </label>
                 <br/>
-                <input type="submit" value="Create" />
+                <Button input type="submit" variant="contained" color="primary">
+                    Create
+                </Button>
             </form>
         </div>
     )}
