@@ -12,14 +12,14 @@ export default function AdvertDetails(props) {
             <p>{props.advert.phoneNumber}</p>
             <img src={props.advert.picture} alt="Productpics"/>
             <p>Price: {props.advert.price}</p>
-            {!props.comments && 'Loading...'}
+            {!props.advert.comments && 'Loading...'}
                  { 
-                     props.comments && <div>
+                     props.advert.comments && <div>
                          <h1>Comments</h1>
                          <ul>
-                             {props.comments && props.comments.map(comment => {
+                             {props.advert.comments && props.advert.comments.map(comment => {
                                  return <li key={comment.id}>
-                                     <i>{comment.author}:</i>
+                                     <i>{comment.author}</i>
                                      <p>{comment.text}</p>
                                  </li>
                              })}
