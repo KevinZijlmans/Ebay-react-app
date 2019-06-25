@@ -15,13 +15,15 @@ class AdvertDetailsContainer extends React.Component {
       } else {
         return <AdvertDetails 
           advert={this.props.advert}
+          comments={this.props.comments}
         />
       }
   }
 }
 
 const mapStateToProps = state => ({
-  advert: state.advert
+  advert: state.advert,
+  comments: state.comments
 })
 
 export default connect(mapStateToProps, {loadAdvert})(AdvertDetailsContainer)

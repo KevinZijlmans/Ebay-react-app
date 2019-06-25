@@ -12,6 +12,19 @@ export default function AdvertDetails(props) {
             <p>{props.advert.phoneNumber}</p>
             <img src={props.advert.picture} alt="Productpics"/>
             <p>Price: {props.advert.price}</p>
+            {!props.comments && 'Loading...'}
+                 { 
+                     props.comments && <div>
+                         <h1>Comments</h1>
+                         <ul>
+                             {props.comments && props.comments.map(comment => {
+                                 return <li key={comment.id}>
+                                     <i>{comment.author}:</i>
+                                     <p>{comment.text}</p>
+                                 </li>
+                             })}
+                         </ul>
+        </div>}
         </div>
         <div>
             <Button variant="contained" color="primary">

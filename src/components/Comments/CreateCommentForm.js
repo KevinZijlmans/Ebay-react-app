@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {createComment} from '../actions/comments'
+import {createComment} from '../../actions/comments'
 import CommentForm from './CommentForm'
 
 class CreateCommentFormContainer extends React.Component {

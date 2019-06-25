@@ -10,11 +10,11 @@ const commentsFetched = comments => ({
     comments
   })
   
-  export const loadComments = () => (dispatch, getState) => {
+  export const loadComments = (id) => (dispatch, getState) => {
   
     if (getState().comments.length) 
       return
-      request(`${baseUrl}/comments`)
+      request(`${baseUrl}/adverts/${id}/comments`)
         .then(response => {
           dispatch(commentsFetched(response.body.comments))
         })
