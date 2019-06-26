@@ -5,7 +5,8 @@ import CommentForm from './CommentForm'
 
 class CreateCommentFormContainer extends React.Component {
   state = {
-    text: ''
+    text: '',
+    id: this.props.match.params.id
   }
   onChange = (comments) => {
     this.setState({
@@ -22,7 +23,8 @@ class CreateCommentFormContainer extends React.Component {
   }
 
   render() {
-    return (<CommentForm
+    return ( 
+    <CommentForm
       onSubmit={this.onSubmit}
       onChange={this.onChange}
       values={this.state}

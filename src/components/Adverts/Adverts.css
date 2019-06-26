@@ -17,8 +17,9 @@ h1 {
 p { 
     font: italic normal 1.4em georgia, sans-serif;
 	letter-spacing: 1px; 
-	margin-bottom: 0; 
+	margin-bottom: 1cm; 
     color: black;
+    margin-top: 0;
 }
 body {
     background-color: lightblue;

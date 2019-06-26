@@ -8,11 +8,13 @@ export default function AdvertDetails(props) {
         <div>
             <h1>{props.advert.title}</h1>       
             <p>{props.advert.description}</p>
+            <i>E-mail:</i>
             <p>{props.advert.email}</p>
+            <i>phonenumber:</i>
             <p>{props.advert.phoneNumber}</p>
             <img src={props.advert.picture} alt="Productpics"/>
             <p>Price: {props.advert.price}</p>
-            {console.log('adverts', props.advert)}
+
             {!props.advert.comments && 'Loading...'}
                  { 
                      props.advert.comments && <div>
