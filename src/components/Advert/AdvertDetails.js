@@ -12,6 +12,7 @@ export default function AdvertDetails(props) {
             <p>{props.advert.phoneNumber}</p>
             <img src={props.advert.picture} alt="Productpics"/>
             <p>Price: {props.advert.price}</p>
+            {console.log('adverts', props.advert)}
             {!props.advert.comments && 'Loading...'}
                  { 
                      props.advert.comments && <div>
@@ -26,11 +27,11 @@ export default function AdvertDetails(props) {
                          </ul>
         </div>}
         </div>
-        <div>
+        {/* <div>
             <Button variant="contained" color="primary">
                 Home
             </Button>
-        </div>
+        </div> */}
         </div>
     )
 }
