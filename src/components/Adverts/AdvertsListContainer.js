@@ -9,7 +9,9 @@ class AdvertsListContainer extends React.Component {
     this.props.loadAdverts()
   }
   render() {
-    return <AdvertsList adverts={this.props.adverts} />
+    return <AdvertsList 
+    adverts={this.props.adverts} 
+    />
   }
 }
 const mapStateToProps = state => {

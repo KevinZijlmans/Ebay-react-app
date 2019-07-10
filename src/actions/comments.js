@@ -26,9 +26,9 @@ const commentsFetched = comments => ({
     comment
   })
   
-  export const createComment = (data, id) => (dispatch) => { 
+  export const createComment = (data) => (dispatch) => { 
     request
-      .post(`${baseUrl}/adverts/${id}/comments`)
+      .post(`${baseUrl}/comments`)
       .send(data)
       .then(response => {
         dispatch(commentCreateSuccess(response.body))

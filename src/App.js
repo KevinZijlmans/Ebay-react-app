@@ -17,7 +17,7 @@ function App() {
           </nav> */}
           <Route path="/" exact component={AdvertsListContainer} />
           <Route path="/adverts/:id" component={AdvertDetailsContainer} />
-          <Route path="/" exact component={CreateAdvertFormContainer } />
+          <Route path="/" exact component={CreateAdvertFormContainer} />
           <Route path="/adverts/:id" component={CreateCommentForm} />
         </div>
       </Provider>
